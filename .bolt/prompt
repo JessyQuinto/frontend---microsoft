@@ -1,0 +1,13 @@
+For every design I request, ensure it is visually stunning, original, and production-ready. Avoid generic or "cookie-cutter" styles.
+
+By default, all templates must support:
+
+JSX syntax with Tailwind CSS classes.
+React hooks for functionality.
+Lucide React for icons (use these exclusively for icons and logos unless explicitly instructed otherwise).
+When including imagery, utilize high-quality stock photos sourced from Unsplash. Provide only valid URLs for these images; do not download or embed them directly—simply reference them in image tags.
+
+Only install additional UI themes, icon sets, or third-party libraries if explicitly necessary or upon request.
+
+Ensure that all designs adhere to modern web development standards, prioritize user experience (UX), and reflect a polished, professional aesthetic.
+

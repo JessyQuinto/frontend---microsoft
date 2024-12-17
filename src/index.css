@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text;
+  }
+
+  ::selection {
+    @apply bg-light-accent/20 dark:bg-dark-accent/20;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 rounded-lg
+           bg-light-accent dark:bg-dark-accent
+           hover:bg-light-accent-hover dark:hover:bg-dark-accent-hover
+           text-white font-medium
+           focus:outline-none focus:ring-2 focus:ring-offset-2
+           focus:ring-light-accent dark:focus:ring-dark-accent
+           disabled:opacity-50 disabled:cursor-not-allowed
+           transition-all duration-200;
+  }
+
+  .input-primary {
+    @apply w-full px-4 py-2 rounded-lg
+           bg-light-bg-secondary dark:bg-dark-bg-tertiary
+           text-light-text dark:text-dark-text
+           border border-light-border dark:border-dark-border
+           focus:ring-2 focus:ring-light-accent dark:focus:ring-dark-accent
+           focus:border-light-accent dark:focus:border-dark-accent
+           placeholder:text-light-text-tertiary dark:placeholder:text-dark-text-tertiary
+           transition-all duration-200;
+  }
+
+  .card {
+    @apply bg-light-bg dark:bg-dark-bg-secondary
+           border border-light-border dark:border-dark-border
+           rounded-xl shadow-light dark:shadow-dark
+           transition-all duration-200;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-light-bg-secondary dark:bg-dark-bg-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-light-border dark:bg-dark-border rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-light-text-tertiary dark:bg-dark-text-tertiary;
+}
